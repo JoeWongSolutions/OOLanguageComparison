@@ -54,4 +54,4 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 #### Functional programming 
 * Does the language support functional programming? 
 #### Multithreading Threads or thread-like abilities
-[How is multitasking accomplished?](Multithreading.md)
+* [How is multitasking accomplished?](Multithreading.md)
