@@ -44,8 +44,9 @@ DispatchQueue.main.async {
     // execute async on main thread
 }
 ```
-This code would allow us to throw tasks into the main thread asynchronously so we know that they will eventually be handled. But how is this multithreading? We can have more than one dispatch queue! 
-```
+This code would allow us to throw tasks into the main thread asynchronously so we know that they will eventually be handled. But how is this multithreading? We can have more than one dispatch queue! This is how we create an OperationQueue:
+```Swift
 let operationQueue: OperationQueue = OperationQueue()
 operationQueue.addOperations([operation1], waitUntilFinished: false)
 ```
+Operation Queues are threads that run concurrently with the main thread and can also have tasks pushed into the queue for eventual handling. By using multiple operation queues, Swift allows developers to better utilize the resources on the device when multithreading.
