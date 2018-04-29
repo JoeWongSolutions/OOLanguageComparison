@@ -50,4 +50,5 @@ let operationQueue: OperationQueue = OperationQueue()
 operationQueue.addOperations([operation1], waitUntilFinished: false)
 ```
 Operation Queues are threads that run concurrently with the main thread and can also have tasks pushed into the queue for eventual handling. By using multiple operation queues, Swift allows developers to better utilize the resources on the device when multithreading.
+
 [Back to main](README.md)
