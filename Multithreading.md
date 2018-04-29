@@ -1,4 +1,4 @@
-[Back to main](README.md)
+[Back to main](README.md/#multithreading)
 # Multithreading in Java and Swift
 Both Java and Swift support multithreading through inheriting the Thread class. Java supports multi-processes in order to handle concurrency but Swift does not allow multi-processes for a single application.
 
