@@ -26,7 +26,29 @@ print(six) //yields 6
 ```
 Since functions are already first class citizens in Swift, we have no problems using the function directly after declaring it.
 ### Higher Order Functions
+In Java, we can assign lambdas to the parameter list of other functions through the use of functional interfaces. In reality, we aren't passing the function per se, but instead are passing an anonymous inner class which implements the functional interface and the function happens to exist within this class. Take a look at the following example:
+```Java
+public static Class Util {
+  public int doMath(Integer x, Function<Integer, Integer> y) {
+    return y.apply(x);  
+}
 
+Integer six = Util.doMath(5, x -> x + 1);
+System.out.println(six); // yields 6
+```
+We created a static class called Util and inside Util is a method called doMath that takes an Integer as a first argument and an object of type Function as the second argument. We then used the same code from above to assign a lambda to incrementByOne.
+We then passed incrementByOne to the doMath() method as an argument. Here is the same code but in Swift:
+```Swift
+func doMath(_ x: Int, _ theFunction: (Int) -> (Int)){
+  return theFunction(x)
+}
+
+var six = doMath(5, { (number) -> (Int) in
+  return number + 1
+})
+
+print(six) //yields 6
+```
 ### Immutable Data
 
 
