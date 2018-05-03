@@ -20,7 +20,7 @@ System.out.println(six); //yields 6
 ```
 Let's do the same thing but with Swift:
 ```Swift
-func incrementByOne(_ a: Int) -> Int { a + 1 }
+func incrementByOne(_ a: Int) -> Int { return a + 1 }
 var six = incrementByOne(5)
 print(six) //yields 6
 ```
