@@ -36,8 +36,7 @@ public static Class Util {
 Integer six = Util.doMath(5, x -> x + 1);
 System.out.println(six); // yields 6
 ```
-We created a static class called Util and inside Util is a method called doMath that takes an Integer as a first argument and an object of type Function as the second argument. We then used the same code from above to assign a lambda to incrementByOne.
-We then passed incrementByOne to the doMath() method as an argument. Here is the same code but in Swift:
+We created a static class called Util and inside Util is a method called doMath that takes an Integer as a first argument and an object of type Function as the second argument. We then used the same code from above to assign a lambda to the second parameter of doMath. Here is the same code but in Swift:
 ```Swift
 func doMath(_ x: Int, _ theFunction: (Int) -> (Int)){
   return theFunction(x)
