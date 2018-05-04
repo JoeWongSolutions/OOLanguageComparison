@@ -48,7 +48,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * Which does the language use? (null/nil/etc) 
 * Does the language have features for handling null/nil references? 
 #### Errors and exception handling 
-#### Lambda expressions, closures, or functions as types 
+#### [Lambda expressions, closures, or functions as types](Lambdas.md) 
 #### [Implementation of listeners and event handlers](Events.md)
 #### [Singleton](Singleton.md)
 * How is a singleton implemented? 
