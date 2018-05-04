@@ -1,1 +1,1 @@
-[Back to Main](README.md/#)
+[Back to Main](README.md/#lambda-expressions,-closures,-or-functions-as-types)
