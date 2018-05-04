@@ -50,7 +50,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 #### Errors and exception handling 
 #### Lambda expressions, closures, or functions as types 
 #### Implementation of listeners and event handlers 
-#### Singleton 
+#### [Singleton](Singleton.md)
 * How is a singleton implemented? 
 * Can it be made thread-safe? 
 * Can the singleton instance be lazily instantiated?
