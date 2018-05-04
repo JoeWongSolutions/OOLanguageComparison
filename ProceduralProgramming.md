@@ -1,0 +1,3 @@
+[Back to Main](README.md/#procedural-programming)
+# Procedural Programming in Java and Swift
+In the purest sense of procedural programming, Java does not support procedural programming. Since procedures in Java must exist within a class, there is no way to create procedure modules naturally. Swift on the other hand supports first class functions so it is possible, albeit somewhat unnatural for problems to be solved procedurally. Swift developers usually develop applications for use on IOS devices or MacOS devices. As such, the user interface components of Swift apps are usually object-oriented and so to write a purely procedural application would require some extreme effort on the developer's part. 
