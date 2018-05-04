@@ -54,7 +54,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * How is a singleton implemented? 
 * Can it be made thread-safe? 
 * Can the singleton instance be lazily instantiated?
-#### Procedural programming 
+#### [Procedural programming](ProceduralProgramming.md) 
 * Does the language support procedural programming? 
 #### [Functional programming](FunctionalProgramming.md)
 * Does the language support functional programming? 
