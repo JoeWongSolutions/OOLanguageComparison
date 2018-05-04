@@ -49,7 +49,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * Does the language have features for handling null/nil references? 
 #### Errors and exception handling 
 #### Lambda expressions, closures, or functions as types 
-#### Implementation of listeners and event handlers 
+#### [Implementation of listeners and event handlers](Events.md)
 #### [Singleton](Singleton.md)
 * How is a singleton implemented? 
 * Can it be made thread-safe? 
