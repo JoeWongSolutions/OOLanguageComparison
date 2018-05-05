@@ -4,13 +4,13 @@ Sometimes, we need to specify a function or action to take when an event is rece
 ```Java
 // Lambda Expression for Java
 (parameters) -> {
-  // Statements
+  // statements
 }
 ```
 ```Swift
 // Closure in Swift
-{(Parameters) -> (ReturnType) in 
-  // Statements
+{(parameters) -> (returnType) in 
+  // statements
 }
 ```
 Both use the -> but they are actually being used for different purposes. In Java, the -> signifies the use of a lambda expression but for Swift, the -> actually specifies the return type. The use of the keyword 'in' is the start of the actual body of the closure. So why do we not specify a return type for Java? This gets into our next topic which is how Lambdas are actually implemented in Java.
@@ -27,6 +27,20 @@ This interface takes one generic of type T and returns a generic of type R. The 
 ```Java
 Function<Integer, Integer> add1 = (x) -> {
   x+1;
-}
+};
 ```
-Wait, did we just assign a function to a variable? It certainly does look like it, but under the hood we are actually overriding the apply() function present in the Function interface. Since Java can determine exactly which function to override (there's only one function) we don't need to specify which function it is. From the interface, the Java compiler can also determine the number of and type of parameters apply() can take and if there is something to be returned. This is why we don't have to specify any extra information in the lambda expression. 
+Wait, did we just assign a function to a variable? It certainly does look like it, but under the hood we are actually overriding the apply() function present in the Function interface. Since Java can determine exactly which function to override (there's only one function) we don't need to specify which function it is. From the interface, the Java compiler can also determine the number of and type of parameters apply() can take and if there is something to be returned. This is why we don't have to specify any extra information in the lambda expression. So what about anonymous inner classes? We didn't instantiate anything with the 'new' keyword so why do we even need them? Technically we are instantiating a class, even if we don't see the 'new' keyword because of how Java8 works. The equivalent anonymous class we created would look like this:
+```Java
+public class MathApplier implements Function<Integer, Integer> {
+  public Integer apply(Integer x) {
+    return x;
+  }
+}
+Function<Integer, Integer> add1 = new MathApplier() {
+  @Override
+  public Integer apply(Integer x) {
+    return x + 1;
+  }
+};
+```
+First, we needed to create a class called MathApplier that implements the correct interface. Then we instantiate an new instance of the MathApplier class and override the apply() method. This is all explicitly written in the code but with lambdas, we could infer all of this information from the interface. What about closures? Are they similarly implemented in Swift?
