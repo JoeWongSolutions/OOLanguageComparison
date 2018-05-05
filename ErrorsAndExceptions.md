@@ -9,6 +9,7 @@ the run-time system(JVM). The exception object contains name and description of 
 where exception has occurred. Creating the Exception Object and handling it to the run-time system is called throwing an Exception.
 
 Here is an example of this in action:
+
 '''java
 // Java program to demonstrate how exception is thrown.
 class ThrowsExecp{
@@ -23,6 +24,7 @@ class ThrowsExecp{
 '''
 
 Output:
+
 '''java
 Exception in thread "main" java.lang.NullPointerException
     at ThrowsExecp.main(File.java:8)
