@@ -47,13 +47,13 @@ First, we needed to create a class called MathApplier that implements the correc
 ### Closures in Swift
 In Swift, functions are considered "first class" which means functions can exist on their own as data. We can pass functions around as parameters and also return functions. See the [function programming](FunctionalProgramming.md) section for more details. This is how the above examples would have been writtin in Swift:
 ```Swift
-function add1(_ x: Int) -> Int {
+func add1(_ x: Int) -> Int {
   return x + 1
 }
 ```
 Thats it! We can now pass add1 to any other variable or function and use it. Then why do we need closures? Closures allow us to specify a behavior (function) without explicitly naming the function. Consider if we had a function like the following:
 ```Swift
-function doMath(_ x: Int, _ mathFunction: (Int) -> Int) -> {
+func doMath(_ x: Int, _ mathFunction: (Int) -> Int) -> {
   return mathFunction(x)
 }
 // Now we can pass add1 to this function
