@@ -53,7 +53,7 @@ func add1(_ x: Int) -> Int {
 ```
 Thats it! We can now pass add1 to any other variable or function and use it. Then why do we need closures? Closures allow us to specify a behavior (function) without explicitly naming the function. Consider if we had a function like the following:
 ```Swift
-func doMath(_ x: Int, _ mathFunction: (Int) -> Int) -> {
+func doMath(_ x: Int, _ mathFunction: (Int) -> Int) -> Int {
   return mathFunction(x)
 }
 // Now we can pass add1 to this function
