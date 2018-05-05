@@ -9,7 +9,8 @@ the run-time system(JVM). The exception object contains name and description of 
 where exception has occurred. Creating the Exception Object and handling it to the run-time system is called throwing an Exception.
 
 Here is an example of this in action:
-'// Java program to demonstrate how exception is thrown.
+'''java
+// Java program to demonstrate how exception is thrown.
 class ThrowsExecp{
      
     public static void main(String args[]){
@@ -18,11 +19,14 @@ class ThrowsExecp{
         System.out.println(str.length());
          
     }
-}'
+}
+'''
 
 Output:
-'Exception in thread "main" java.lang.NullPointerException
-    at ThrowsExecp.main(File.java:8)'
+'''java
+Exception in thread "main" java.lang.NullPointerException
+    at ThrowsExecp.main(File.java:8)
+'''
 
 * Customized Exception Handling *
 This is how we as programmers in Java do Exception Handling. There are five keywords we use when handling exceptions: try, catch,
@@ -31,7 +35,8 @@ Code may also be caught within a catch block, and then handled accordingly. If w
 keyword. Exceptions thrown out of a method are specified by throws. Finally will run any code that must be ran.
 
 An example of a try catch clause:
-'try {
+'''java
+try {
 // block of code to monitor for errors
 // the code you think can raise an exception
 }
@@ -44,7 +49,8 @@ catch (ExceptionType2 exOb) {
 // optional
 finally {
 // block of code to be executed after try block ends
-}'
+}
+'''
 
 Examples of "throw" and "throws":
 'void aMethod() throws Exception1, Exception2 {
