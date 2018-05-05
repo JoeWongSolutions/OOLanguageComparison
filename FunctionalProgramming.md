@@ -5,7 +5,7 @@ Java, born as a pure object oriented language, lacked functional programming abi
 2. Higher Order Functions (functions that can take other functions as input or return functions as output)
 3. Immutable data (data that cannot be changed)
 ### First Class Functions
-In Java, this is as awkward as it gets when trying to talk about functional programming abilities. Inherently, Java does not support first class functions. Functions can only exist inside a class. However, Java has made the syntax for lambdas appear as though functions can exist independently. If you need a refresher on Java lambdas, you can go back and read it [here](#). Remember a lambda function looks like:
+In Java, this is as awkward as it gets when trying to talk about functional programming abilities. Inherently, Java does not support first class functions. Functions can only exist inside a class. However, Java has made the syntax for lambdas appear as though functions can exist independently. If you need a refresher on Java lambdas, you can go back and read it [here](Lambdas.md). Remember a lambda function looks like:
 ```Java
 x -> x + 1;
 ```
