@@ -13,7 +13,7 @@ Here is an example of this in action:
 '''java
 // Java program to demonstrate how exception is thrown.
 class ThrowsExecp{
-     
+    
     public static void main(String args[]){
          
         String str = null;
