@@ -44,3 +44,28 @@ Function<Integer, Integer> add1 = new MathApplier() {
 };
 ```
 First, we needed to create a class called MathApplier that implements the correct interface. Then we instantiate an new instance of the MathApplier class and override the apply() method. This is all explicitly written in the code but with lambdas, we could infer all of this information from the interface. What about closures? Are they similarly implemented in Swift?
+### Closures in Swift
+In Swift, functions are considered "first class" which means functions can exist on their own as data. We can pass functions around as parameters and also return functions. See the [function programming](FunctionalProgramming.md) section for more details. This is how the above examples would have been writtin in Swift:
+```Swift
+function add1(_ x: Int) -> Int {
+  return x + 1
+}
+```
+Thats it! We can now pass add1 to any other variable or function and use it. Then why do we need closures? Closures allow us to specify a behavior (function) without explicitly naming the function. Consider if we had a function like the following:
+```Swift
+function doMath(_ x: Int, _ mathFunction: (Int) -> Int) -> {
+  return mathFunction(x)
+}
+// Now we can pass add1 to this function
+print(doMath(1, add1) // Outputs 2
+
+//We can also avoid creating add1 altogether and just pass a closure
+print(doMath(1, {(_ x: Int) -> Int in
+  return x + 1
+}) //outputs 2 as well
+```
+Sometimes we need a function but it will only be used once in the program. Closures are a nice way to avoid creating functions and still get the behavior we need. 
+### Function types
+In Java we used the interface type to determine the function type of the lambda expression. In Swift, the function type is a bit more generic. In the doMath function, we specified mathFunction (the parameter taken by doMath) to be of type: (Int) -> Int. That is, we needed a type of function that took an Int and returned an Int. The underlying logic did not matter so any function with this type can be used. This flexibility is not inherent in Java. If two interfaces have the same method with the same method signature, we cannot substitute one for the other. 
+
+[Back to Main](README.md/#lambda-expressions-closures-or-functions-as-types)
