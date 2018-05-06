@@ -22,9 +22,9 @@ considered.
 
 When a class instance is assigned to a property, constant, or variable, a strong reference is made with the instance. A strong reference refers
 to the fact that the reference has a "strong" or firm hold on the instance, and does not allow it to be deallocated so long as the reference
-remains intact. You may however initialize you would like a weaker reference onto the instance, in which case you would place the 'weak' keyword
+remains intact. You may however initialize you would like a weaker reference onto the instance, in which case you would place the `weak` keyword
 before a variable or property declaration. This type of reference works by having the automatic reference counting routine set the reference to
-'nil' when it is deallocated. Weak references need to be declared as optional variables.
+`nil` when it is deallocated. Weak references need to be declared as optional variables.
 
 Swift does not support garbage collection, unlike Java.
 
