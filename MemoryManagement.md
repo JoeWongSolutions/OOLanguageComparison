@@ -26,5 +26,33 @@ remains intact. You may however initialize you would like a weaker reference ont
 before a variable or property declaration. This type of reference works by having the automatic reference counting routine set the reference to
 `nil` when it is deallocated. Weak references need to be declared as optional variables.
 
-Swift does not support garbage collection, unlike Java.
+An example of strong referencing in Swift:
+```swift
+    class Person {
+        let name: String
+        init(name: String) { self.name = name }
+        var apartment: Apartment?
+        deinit { print("\(name) is being deinitialized") }
+    }
+     
+    class Apartment {
+        let unit: String
+        init(unit: String) { self.unit = unit }
+        var tenant: Person?
+        deinit { print("Apartment \(unit) is being deinitialized") }
+    }
+```
+This code above is simply to create our classes. Below we will create variables by which to make our references:
+```swift
+    var john: Person?
+    var unit4A: Apartment?
+```
+We will now assign the variable, with `john` having a strong reference to the new `Person` instance, and `unit4A` having a strong reference to the new `Apartment` instance:
+```swift
+    john = Person(name: "John Appleseed")
+    unit4A = Apartment(unit: "4A")
+```
 
+To create a an example of a `weak` refence type, we will simply change the line `var tenant: Person?` in our Apartment class to `weak var tenant: Person?`
+
+Swift does not support garbage collection, unlike Java.
