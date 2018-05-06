@@ -4,9 +4,9 @@
 
 There are two kinds of Exception Handling in Java:
 * **Default Exception Handling**
-Whenever inside a method, if an exception has occurred, the method creates an Object known as Exception Object and hands it off to
-the run-time system(JVM). The exception object contains name and description of the exception, and current state of the program 
-where exception has occurred. Creating the Exception Object and handling it to the run-time system is called throwing an Exception.
+   Whenever inside a method, if an exception has occurred, the method creates an Object known as Exception Object and hands it off to  
+   the run-time system(JVM). The exception object contains name and description of the exception, and current state of the program  
+   where exception has occurred. Creating the Exception Object and handling it to the run-time system is called throwing an Exception.  
 
 Here is an example of this in action:
 
@@ -31,10 +31,10 @@ Exception in thread "main" java.lang.NullPointerException
 ```
 
 * **Customized Exception Handling**
-This is how we as programmers in Java do Exception Handling. There are five keywords we use when handling exceptions: `try`, `catch`,
-`throw`, `throws`, and `finally`. Statements believed possible to fail are placed within a `try` block. If an exception occurs, it is thrown.
-Code may also be caught within a `catch` block, and then handled accordingly. If we wish to manually throw an exception, we use the `throw`
-keyword. Exceptions thrown out of a method are specified by `throws`. `finally` will run any code that must be ran.
+   This is how we as programmers in Java do Exception Handling. There are five keywords we use when handling exceptions: `try`, `catch`,
+   `throw`, `throws`, and `finally`. Statements believed possible to fail are placed within a `try` block. If an exception occurs, it is thrown.  
+   Code may also be caught within a `catch` block, and then handled accordingly. If we wish to manually throw an exception, we use the `throw`
+   keyword. Exceptions thrown out of a method are specified by `throws`. `finally` will run any code that must be ran.
 
 An example of a try catch clause:
 ```java
