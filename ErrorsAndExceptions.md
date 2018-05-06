@@ -10,7 +10,7 @@ where exception has occurred. Creating the Exception Object and handling it to t
 
 Here is an example of this in action:
 
-'''java
+```java
 // Java program to demonstrate how exception is thrown.
 class ThrowsExecp{
     
@@ -21,23 +21,23 @@ class ThrowsExecp{
          
     }
 }
-'''
+```
 
 Output:
 
-'''java
+```java
 Exception in thread "main" java.lang.NullPointerException
     at ThrowsExecp.main(File.java:8)
-'''
+```
 
 * Customized Exception Handling *
-This is how we as programmers in Java do Exception Handling. There are five keywords we use when handling exceptions: try, catch,
-throw, throws, and finally. Statements believed possible to fail are placed within a try block. If an exception occurs, it is thrown.
-Code may also be caught within a catch block, and then handled accordingly. If we wish to manually throw an exception, we use the throw
-keyword. Exceptions thrown out of a method are specified by throws. Finally will run any code that must be ran.
+This is how we as programmers in Java do Exception Handling. There are five keywords we use when handling exceptions: `try`, `catch`,
+`throw`, `throws`, and `finally`. Statements believed possible to fail are placed within a `try` block. If an exception occurs, it is thrown.
+Code may also be caught within a `catch` block, and then handled accordingly. If we wish to manually throw an exception, we use the `throw`
+keyword. Exceptions thrown out of a method are specified by `throws`. `finally` will run any code that must be ran.
 
 An example of a try catch clause:
-'''java
+```java
 try {
 // block of code to monitor for errors
 // the code you think can raise an exception
@@ -52,10 +52,11 @@ catch (ExceptionType2 exOb) {
 finally {
 // block of code to be executed after try block ends
 }
-'''
+```
 
-Examples of "throw" and "throws":
-'void aMethod() throws Exception1, Exception2 {
+Examples of `throw` and `throws`:
+```java
+void aMethod() throws Exception1, Exception2 {
  
     // statements...
     if (an exception occurs) {
@@ -66,7 +67,8 @@ Examples of "throw" and "throws":
     if (another exception occurs) {
         throw new Exception2();
     }
-}'
+}
+```
 
 ## Swift
 
@@ -74,28 +76,32 @@ In Swift, errors are represented by values of types that conform to the Error pr
 type can be used for error handling.
 
 Here is an example of handling errors using enumerations:
-'
+```swift
     enum VendingMachineError: Error {
         case invalidSelection
         case insufficientFunds(coinsNeeded: Int)
         case outOfStock
-    }'
+    }
+```
     
-The "throw" keyword can be used to throw an error, and you may also include necessary parameters that must be met for proper 
+The `throw` keyword can be used to throw an error, and you may also include necessary parameters that must be met for proper 
 execution.
 
-Here is an example of the "throw" keyword being used: 
-'throw VendingMachineError.insufficientFunds(coinsNeeded: 5)'
+Here is an example of the `throw` keyword being used: 
+```swift
+throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
+```
 
 There are four ways for programmers to handle errors within Swift: 
-  * Handle using a 'do-catch'
+  * Handle using a `do-catch`
   * Handle the error as an optional value
   * Assert the error won't occur
   * Propogate the error from a function to the code that calls that function
   
-For an error in a 'do-catch', the errors are ran in a code block. For an error found in a 'do' clause, its corresponding 'catch'
+For an error in a `do-catch`, the errors are ran in a code block. For an error found in a `do` clause, its corresponding `catch`
 is ran:
-'do {
+```swift
+do {
     try buyFavoriteSnack(person: "Alice", vendingMachine: vendingMachine)
     print("Success! Yum.")
 } catch VendingMachineError.invalidSelection {
@@ -106,28 +112,31 @@ is ran:
     print("Insufficient funds. Please insert an additional \(coinsNeeded) coins.")
 } catch {
     print("Unexpected error: \(error).")
-}'
+}
+```
 
-To convert errors to optional values, use the keyword 'try?'. If an error is thrown while evaluating the expression, its return 
-is 'nil':
-'
+To convert errors to optional values, use the keyword `try?`. If an error is thrown while evaluating the expression, its return 
+is `nil`:
+```swift
     func fetchData() -> Data? {
         if let data = try? fetchDataFromDisk() { return data }
         if let data = try? fetchDataFromServer() { return data }
         return nil
     }
-'
+```
 
-If you know a throwing function or method won't throw an error at runtime, you may write the 'try!' keyword before the expression
+If you know a throwing function or method won't throw an error at runtime, you may write the `try!` keyword before the expression
 to disable error propagation. This wraps the call in a runtime assertion, which, if an error does occur, will result in a 
 runtime error.
-'let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")'
+```swift
+let photo = try! loadImage(atPath: "./Resources/John Appleseed.jpg")
+```
 
-To indicate that a method or initializer can throw errors, use the keyword 'throws' after its parameters. This marks the function/
+To indicate that a method or initializer can throw errors, use the keyword `throws` after its parameters. This marks the function/
 initializer as a throwing function. A throwing function propagates errors that are thrown inside of it to the scope from which it’s
 called. 
 
-'
+```swift
     let favoriteSnacks = [
         "Alice": "Chips",
         "Bob": "Licorice",
@@ -137,6 +146,6 @@ called.
         let snackName = favoriteSnacks[person] ?? "Candy Bar"
         try vendingMachine.vend(itemNamed: snackName)
     }
-'
+```
 
 
