@@ -19,12 +19,12 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * What types does the language support? 
 * Are both reference and value types supported? 
 * Can new value types be created? 
-#### Classes 
+#### [Classes] (Classes.md)
 * Defining 
 * Creating new instances 
 * Constructing/initializing 
 * Destructing/de-initializing 
-#### Instance reference name in data type (class) 
+#### I[nstance reference name in data type (class) ](InstanceRef.md)
 * this? self? 
 #### [Properties](Properties.md) 
 * Getters and setters…write your own or built in? 
