@@ -5,7 +5,8 @@
 * Joe Wong
 #### Directions
 OO Language Comparison Pick two object-oriented languages. Form a team to work on the comparison. You can be a team of 1. Teams greater than 4 are usually not a good idea. Using the comparison criteria provided, compare the two languages through documentation and code examples. The documentation is to be written in markdown. The documentation and code examples are to be in a GitHub public repository that the team uses. The home page is to be the README.md for the repository. Other mark down pages can be linked using relative links in markdown files. Relative links in markdown files (Links to an external site.)Links to an external site.. The README.md is to include near the top: The two languages being compared. The names of the members of the team. The URL for the GitHub repository for your team is to be submitted via an assignment on Canvas. 
-#### Comparison Criteria [Language purpose/genesis](LanguagePurpose.md) 
+#### Comparison Criteria 
+#### [Language purpose/genesis](LanguagePurpose.md) 
 * Why was the language created? 
 * What problems was the language trying to address? 
 * Is the language a reaction to a previous language or a replacement for another language? 
@@ -47,7 +48,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 #### [Null/nil references](NullAndNil.md) 
 * Which does the language use? (null/nil/etc) 
 * Does the language have features for handling null/nil references? 
-#### Errors and exception handling 
+#### [Errors and exception handling](ErrorsAndExceptions.md) 
 #### [Lambda expressions, closures, or functions as types](Lambdas.md) 
 #### [Implementation of listeners and event handlers](Events.md)
 #### [Singleton](Singleton.md)
