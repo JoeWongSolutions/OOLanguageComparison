@@ -26,7 +26,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * Destructing/de-initializing 
 #### Instance reference name in data type (class) 
 * this? self? 
-#### Properties 
+#### [Properties](Properties.md) 
 * Getters and setters…write your own or built in? 
 * Backing variables? 
 * Computed properties? 
