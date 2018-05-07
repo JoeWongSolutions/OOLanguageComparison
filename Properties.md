@@ -1,3 +1,5 @@
+[Back to Main](README.md/#properties)
+
 # Properties
 
 ## Java
@@ -111,7 +113,7 @@ let someOtherInternalConstant = 0
 ```
 Since SomeOtherInternalClass and someOtherInternalConstant were declared without an explicit access modifier, they were defaulted to internal.
 
-   
+[Back to Main](README.md/#properties)
 
 
 
