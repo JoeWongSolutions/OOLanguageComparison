@@ -34,7 +34,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * What does the language support? 
 * What abilities does it have? 
 * How is it used? 
-#### Inheritance/extension 
+#### [Inheritance/extension](Inheritance.md)
 #### [Reflection](Reflection.md) 
 * What reflection abilities are supported? 
 * How is reflection used? 
