@@ -30,11 +30,11 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * Getters and setters…write your own or built in? 
 * Backing variables? 
 * Computed properties? 
-#### [Interfaces / protocols](InterfacesAndProtocols.md) 
+#### [Interfaces/protocols](InterfacesAndProtocols.md) 
 * What does the language support? 
 * What abilities does it have? 
 * How is it used? 
-#### Inheritance / extension 
+#### Inheritance/extension 
 #### [Reflection](Reflection.md) 
 * What reflection abilities are supported? 
 * How is reflection used? 
