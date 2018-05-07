@@ -1,4 +1,4 @@
-[Back to Main](README.md/#interfaces)
+[Back to Main](README.md/#interfaces-protocols)
 
 # Interfaces and Protocols
 
@@ -69,4 +69,4 @@ a `gameProtocol` protocol and two classes, `chessClass` and `checkersClass`. The
 properties and methods we may provide them in the `gameProtocol` protocol.
 
 
-[Back to Main](README.md/#interfaces)
+[Back to Main](README.md/#interfaces-protocols)

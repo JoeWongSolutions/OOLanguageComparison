@@ -1,4 +1,4 @@
-[Back to Main](README.md/#language-purpose-genesis)
+[Back to Main](README.md/#language-purposegenesis)
 
 # Language Purpose and Genesis
 
@@ -18,4 +18,4 @@ it (such as C, C++, and Objective-C). Swift was created with basic principles in
 that Swift wished to address especially was Safety. In previous languages, it was easy to "hang yourself" so to speak, with problems
 such as null pointers and handling callbacks.
 
-[Back to Main](README.md/#language-purpose-genesis)
+[Back to Main](README.md/#language-purposegenesis)
