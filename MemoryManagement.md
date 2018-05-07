@@ -1,3 +1,5 @@
+[Back to Main](README.md/#memory-management)
+
 # Memory Management
 
 ## Java
@@ -56,3 +58,5 @@ We will now assign the variable, with `john` having a strong reference to the ne
 To create a an example of a `weak` refence type, we will simply change the line `var tenant: Person?` in our Apartment class to `weak var tenant: Person?`
 
 Swift does not support garbage collection, unlike Java.
+
+[Back to Main](README.md/#memory-management)
