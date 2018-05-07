@@ -1,3 +1,5 @@
+[Back to Main](README.md/#interfaces)
+
 # Interfaces and Protocols
 
 ## Java
@@ -65,3 +67,6 @@ As in Java, classes or structs in Swift with protocols must provide the properti
 help us facilitate multiple inheritance and extend similar functionality across multiple related classes or structs. For example, we may have
 a `gameProtocol` protocol and two classes, `chessClass` and `checkersClass`. The tho classes will have different methods, but for similar
 properties and methods we may provide them in the `gameProtocol` protocol.
+
+
+[Back to Main](README.md/#interfaces)
