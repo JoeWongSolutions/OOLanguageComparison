@@ -13,7 +13,7 @@ if (guest1 == guest2)
   //This will print out "They are equal"
 ```
 
-To compare the contents of two object classes, we can use the `.equals()` method to compare the two objects. By default, the `.equals()' method
+To compare the contents of two object classes, we can use the `.equals()` method to compare the two objects. By default, the `.equals()` method
 uses the same logic as the `==` operator, meaning that only memory location is checked between the two objects. To fix this, we must override
 the method and provide it logical operations that will compare the values of the objects we wish to check.
 
