@@ -1,3 +1,5 @@
+[Back to Main](README.md/#language-purpose-and-genesis)
+
 # Language Purpose and Genesis
 
 ## Java
@@ -15,3 +17,5 @@ the large amount of Objective-C code already written for Apple products, but als
 it (such as C, C++, and Objective-C). Swift was created with basic principles in mind: Safety, Speed, and Expressivity. A main issue
 that Swift wished to address especially was Safety. In previous languages, it was easy to "hang yourself" so to speak, with problems
 such as null pointers and handling callbacks.
+
+[Back to Main](README.md/#language-purpose-and-genesis)
