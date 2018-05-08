@@ -12,7 +12,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * Is the language a reaction to a previous language or a replacement for another language? 
 #### [Unique features of the language](UniqueFeatures.md)
 * Does the language have any particularly unique features? 
-#### Name spaces 
+#### [Name spaces](NameSpace.md) 
 * How are name spaces implemented? 
 * How are name spaces used? 
 #### [Types](Types.md)
