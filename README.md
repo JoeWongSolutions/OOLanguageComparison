@@ -15,7 +15,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 #### Name spaces 
 * How are name spaces implemented? 
 * How are name spaces used? 
-#### Types 
+#### [Types](Types.md)
 * What types does the language support? 
 * Are both reference and value types supported? 
 * Can new value types be created? 
