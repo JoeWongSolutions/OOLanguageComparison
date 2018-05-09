@@ -1,3 +1,4 @@
+[Back to Main](README.md/#classes)
 # Classes
 
 ## Java
@@ -145,7 +146,7 @@ deinit {
 
 ```
 
-[Back to Main](README.md/#properties)
+[Back to Main](README.md/#classes)
 
 
 
