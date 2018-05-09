@@ -1,6 +1,4 @@
-//What types does the language support?
-//Are both reference and value types supported?
-//Can new value types be created?
+[Back to Main](README.md/#types)
 # Types
 
 ## Java
@@ -95,5 +93,5 @@ if let id = ID {
 in this example both university and ID are optionals. university is not given an initial value but ID is, therefore university will be set to nil. When attempting to print the variables, we must first unwrap the optional into a temporary variable that will be of the same type as what the optional contained.
 
 
-[Back to Main](README.md/#Types)
+[Back to Main](README.md/#types)
 
