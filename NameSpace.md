@@ -1,4 +1,4 @@
-[Back to Main](README.md/#namespaces)
+[Back to Main](README.md/#name-spaces)
 # Namespaces
 
 ## Java
@@ -9,7 +9,7 @@ In Java, packages group related classes together and define a namespace for thos
 Swift’s namespace concept is based on modules. A module is a single unit of code distribution; an application or framework built and shipped as a single unit and may be imported by other modules. With Swift, each build target (such as a framework or app bundle) in Xcode is treated as a distinct module. With Swift namespacing is implicit, all classes (etc) are implicitly scoped by the module (XCode target) they are in. no class prefixes are needed. All Swift declarations are considered to be part of some module.
 
 
-[Back to Main](README.md/#namespaces)
+[Back to Main](README.md/#name-spaces)
 
 
 
