@@ -24,7 +24,7 @@ OO Language Comparison Pick two object-oriented languages. Form a team to work o
 * Creating new instances 
 * Constructing/initializing 
 * Destructing/de-initializing 
-#### [Instance reference name in data type (class) ](InstanceRef.md)
+#### [Instance reference name in data type (class) ](InstanceReference.md)
 * this? self? 
 #### [Properties](Properties.md) 
 * Getters and setters…write your own or built in? 
