@@ -1,3 +1,4 @@
+[Back to Main](README.md/#classes)
 # Instance Reference Name
 
 ## Java
@@ -38,4 +39,4 @@ class GameScene: SKScene {
 
 ```
 
-[Back to Main](README.md/#properties)
+[Back to Main](README.md/#classes)
