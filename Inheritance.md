@@ -1,3 +1,4 @@
+[Back to Main](README.md/#inheritance)
 # Inheritance / Extension
 
 ## Java
@@ -92,5 +93,5 @@ Swift extensions can add properties, methods, and even initializers to existing 
     
     ```
     
-[Back to Main](README.md)
+[Back to Main](README.md/#inheritance)
 
